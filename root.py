@@ -1,5 +1,7 @@
-state = "Lab"
 
+
+
+state = "Lab"
 while True:
 
     if state == "Lab":
