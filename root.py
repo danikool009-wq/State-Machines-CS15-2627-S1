@@ -1,47 +1,47 @@
-state = "class"
+state = "Lab"
 
 while True:
 
-    if state == "class":
-        print("You are in class!")
-        event = input("What do you want to do? (study/break): ").lower()
+    if state == "Lab":
+        print("youre in a Lab")
+        event = input("What do you want to view first (Algea/centerfuge machine): ")
 
-        if event == "study":
-            state = "homework"
-        elif event == "break":
-            state = "lunch"
+        if event == "algea":
+            state = "analyze"
+        elif event == "centerfuge machine":
+            state = "take notes"
         else:
-            print("Invalid event. Your state has not changed.")
+            print("type an actual answer displayed please")
 
-    elif state == "lunch":
-        print("You are eating lunch!")
-        event = input("What do you want to do? (eat/play): ").lower()
+    elif state == "take notes":
+        print("youre taking notes of the data for future use!")
+        event = input("what should you do next doc? (close eyes/chill): ")
 
-        if event == "eat":
-            state = "class"
-        elif event == "play":
-            state = "recreation"
+        if event == "close eyes":
+            state = "Lab"
+        elif event == "chill":
+            state = "Leave the lab"
         else:
-            print("Invalid event. Your state has not changed.")
+            print("type an actual answer displayed please")
 
-    elif state == "homework":
-        print("You are doing homework!")
-        event = input("What do you want to do? (finish/rest): ").lower()
+    elif state == "analyze":
+        print("you analyze the experiment before you in awe")
+        event = input("What do you want to do? (finish/rest): ")
 
         if event == "finish":
-            state = "recreation"
-        elif event == "rest":
-            state = "class"
+            state = "leave the lab"
+        elif event == "go back to lab":
+            state = "Lab"
         else:
-            print("Invalid event. Your state has not changed.")
+            print("type an actual answer displayed please")
 
-    elif state == "recreation":
-        print("You are relaxing!")
-        event = input("What do you want to do? (study/sleep): ").lower()
+    elif state == "leave the lab":
+        print("You are outsied the lab and go to get timmies")
+        event = input("What do you want to do? (centefuge/go back to lab): ")
 
-        if event == "study":
-            state = "homework"
-        elif event == "sleep":
-            state = "class"
+        if event == "centerfuge":
+            state = "take notes"
+        elif event == "go back to lab":
+            state = "Lab"
         else:
-            print("Invalid event. Your state has not changed.")
+            print("type an actual answer displayed please")
